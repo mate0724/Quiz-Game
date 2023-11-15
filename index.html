@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="website icon" href="logos.png">
+</head>
+<body>
+    <h1 class="welcome">Welcome to the best Quiz Game!</h1>
+    <h3 class="ayr">Are You Ready?</h3>
+    <div class="start_btn"><button>Start Quiz</button></div>
+    <!-- <a href="/highscores.html" class="highscores-btn"><button>High Scores</button></a> -->
+
+    <div class="quiz-box">
+        <header>
+            <div class="total-question"></div>
+            <div class="timer">
+                <div class="time-left">Your Time</div>
+                <div class="timer-sec">15</div>
+            </div>
+        </header>
+        <section>
+            <div class="question-text"></div>
+            <div class="question-image"></div>
+            <div class="option-list"></div>
+        </section>
+
+        <footer>
+            <button class="next-button">Next</button>
+            <button id="hintButton">Hint</button>
+
+        </footer>
+    </div>
+
+    <div class="result-box">
+        <div class="complete_text">You've completed the Quiz!</div>
+        <div class="score_text"></div>
+        <div class="buttons">
+            <button class="restart">Restart</button>
+            <!-- <a href="save.html"><button class="restart">Save</button></a> -->
+        </div>
+        <form id="score-form">
+            <!-- <label for="player-name">Név: </label> -->
+            <input type="text" id="player-name" required placeholder="Enter your name">
+            <button class="save-btn" type="submit">Save</button>
+            <button class="clear-btn">Clear</button>
+        </form>
+        <div id="scoreboard"></div> 
+    </div>
+
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
